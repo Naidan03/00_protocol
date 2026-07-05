@@ -1,3 +1,5 @@
+**English** | [Монгол](README.mn.md)
+
 # **Memory + Result = Work**
 
 A theoretical framework that models the work process as a computable, probabilistic system.
@@ -49,6 +51,7 @@ x(t) = x_0 + \sum_{i=1}^{t} \xi_i, \qquad \xi_i \in \{-1, +1\}
 ## **Gaussian System**
 
 ### **Data Recovery and Reconstruction**
+
 * **Reconstructing Missing Information:** Observed data can be used to reconstruct missing segments of the execution path.  
 * **Mathematical Formulation:** Given the observed vector ($z_1$) and the unobserved vector ($z_2$), the conditional Gaussian distribution is expressed as:
 
@@ -60,7 +63,9 @@ z_2 \mid z_1 \sim \mathcal{N}\big(\mu_2 + \Sigma_{21}\Sigma_{11}^{-1}(z_1 - \mu_
 * **Convergence to Certainty:** As the completeness of our information increases, the variance approaches zero ($\sigma^2 \to 0$). The stochastic process converges to a high-precision deterministic execution.
 
 ### **Central Limit Theorem (CLT) Convergence**
+
 As the discrete steps of the work process (random walk) accumulate, the system naturally converges to a continuous Gaussian distribution:
+
 ```math
 x(t) \approx \mathcal{N}(x_0, t)
 ```
@@ -68,12 +73,15 @@ x(t) \approx \mathcal{N}(x_0, t)
 ### **Probability of Success**
 
 Given drift $\mu$ (directional momentum) and volatility $\sigma$ (risk or instability), the probability of reaching or exceeding a target threshold $G$ within a finite time horizon $T$ is:
+
 ```math
 P\big(x(T) \ge G\big) = 1 - \Phi\left(\frac{G - x_0 - \mu T}{\sigma\sqrt{T}}\right)
 ```
 
 ## **System Feedback Loop**
+
 The system operates as a continuous thermodynamic-like feedback loop:
+
 | Component | Mathematical Model | Practical Description |
 | :---- | :---- | :---- |
 | **Information** | Gauss | Reconstructing missing data using context and historical memory |

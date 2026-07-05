@@ -1,0 +1,6 @@
+{
+  // Prose paragraphs are not wrapped; line length is irrelevant for GitHub rendering
+  "MD013": false,
+  // First line is the language switcher link, not a heading
+  "MD041": false
+}
