@@ -2,6 +2,8 @@
 
 # **Memory + Result = Work**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21208376.svg)](https://doi.org/10.5281/zenodo.21208376)
+
 A theoretical framework that models the work process as a computable, probabilistic system.
 
 ## **Core Concept**
