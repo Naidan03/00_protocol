@@ -52,9 +52,10 @@ x(t) = x_0 + \sum_{i=1}^{t} \xi_i, \qquad \xi_i \in \{-1, +1\}
 * **Reconstructing Missing Information:** Observed data can be used to reconstruct missing segments of the execution path.  
 * **Mathematical Formulation:** Given the observed vector ($z_1$) and the unobserved vector ($z_2$), the conditional Gaussian distribution is expressed as:
 
-  ```math
-  z_2 \mid z_1 \sim \mathcal{N}\big(\mu_2 + \Sigma_{21}\Sigma_{11}^{-1}(z_1 - \mu_1), \;\Sigma_{22} - \Sigma_{21}\Sigma_{11}^{-1}\Sigma_{12}\big)
-  ```
+```math
+z_2 \mid z_1 \sim \mathcal{N}\big(\mu_2 + \Sigma_{21}\Sigma_{11}^{-1}(z_1 - \mu_1), \;\Sigma_{22} - \Sigma_{21}\Sigma_{11}^{-1}\Sigma_{12}\big)
+```
+
 * **Reconstructed Path:** The conditional mean of the distribution represents the reconstructed optimal path of the work process.  
 * **Convergence to Certainty:** As the completeness of our information increases, the variance approaches zero ($\sigma^2 \to 0$). The stochastic process converges to a high-precision deterministic execution.
 
